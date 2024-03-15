@@ -1,0 +1,75 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #121826;
+    background-image: url("assets/blur-radial.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+    color: #e5e7eb;
+    align-self: center;
+}
+
+.main-container {
+    background-color: #212936;
+    width: 35%;
+    height: 50%;
+    border-radius: 1rem;
+    border: 1px solid #4d5562;
+    padding-inline: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+form {
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    color: #a1a1a9;
+}
+
+input {
+    border: 2px solid #4d5562;
+    background-color: #212936;
+    border-radius: 1rem;
+    padding: 1rem 0.75rem;
+}
+
+.button-container {
+    justify-self: center;
+}
+
+button {
+    border: none;
+    color: #e5e7eb;
+    background: rgb(101, 44, 209);
+    background: linear-gradient(
+        0deg,
+        rgba(101, 44, 209, 1) 0%,
+        rgba(132, 94, 238, 1) 85%
+    );
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+.small-text {
+    font-size: 0.75rem;
+}
