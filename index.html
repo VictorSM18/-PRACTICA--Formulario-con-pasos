@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,24 +14,28 @@
         <title>Multi-step Register Form</title>
     </head>
     <body>
-        <main class="main-container">
-            <h1>Register</h1>
-            <form action="">
+        <section class="container first">
+            <p class="title">Register</p>
+            <form class="form1" action="">
                 <div class="form-input small-text">
                     <label for="name">Name</label>
                     <input
+                        class="input-form1"
                         id="name"
                         type="text"
                         placeholder="enter your name"
+                        required
                     />
                 </div>
 
                 <div class="form-input small-text">
                     <label for="email">Email</label>
                     <input
+                        class="input-form1"
                         id="email"
                         type="email"
                         placeholder="example@gmail.com"
+                        required
                     />
                 </div>
 
@@ -39,7 +43,91 @@
                     <button type="submit">Continue</button>
                 </div>
             </form>
-        </main>
+        </section>
+        <section class="container second">
+            <p class="title">Which topics you are interested in?</p>
+            <form class="form2" action="">
+                <div class="form2-option">
+                    <input
+                        class="input-form2"
+                        id="option1"
+                        type="radio"
+                        name="option"
+                        value="option1"
+                    />
+                    <label class="label-form2" for="option1"
+                        >Software Development</label
+                    >
+                    
+                </div>
+
+                <div class="form2-option">
+                    <input
+                    class="input-form2"
+                    id="option2"
+                    type="radio"
+                    name="option"
+                    value="option2"
+                    />
+                    <label class="label-form2" for="option2"
+                        >User Experience</label
+                    >
+                </div>
+
+                <div class="form2-option">
+                    <input
+                    class="input-form2"
+                    id="option3"
+                    type="radio"
+                    name="option"
+                    value="option3"
+                    />
+                    <label class="label-form2" for="option3"
+                        >Graphic Design</label
+                    >
+                </div>
+
+                <div class="button-container small-text">
+                    <button type="submit">Continue</button>
+                </div>
+            </form>
+        </section>
+        <section class="container first">
+            <p class="title">Register</p>
+            <form class="form1" action="">
+                <div class="form-input small-text">
+                    <label for="name">Name</label>
+                    <input
+                        class="input-form1"
+                        id="name"
+                        type="text"
+                        placeholder="enter your name"
+                        required
+                    />
+                </div>
+
+                <div class="form-input small-text">
+                    <label for="email">Email</label>
+                    <input
+                        class="input-form1"
+                        id="email"
+                        type="email"
+                        placeholder="example@gmail.com"
+                        required
+                    />
+                </div>
+
+                <div class="button-container small-text">
+                    <button type="submit">Continue</button>
+                </div>
+            </form>
+        </section>
+        <div class="steps-container small-text">
+            <p>Step 1 of 3</p>
+            <div class="step step-active"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>
