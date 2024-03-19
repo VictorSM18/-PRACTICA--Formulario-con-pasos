@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,8 @@
         <title>Multi-step Register Form</title>
     </head>
     <body>
-        <section class="container first">
+        <!-- FIRST CARD -->
+        <section class="container first card1">
             <p class="title">Register</p>
             <form class="form1" action="">
                 <div class="form-input small-text">
@@ -39,35 +40,36 @@
                     />
                 </div>
 
-                <div class="button-container small-text">
-                    <button type="submit">Continue</button>
+                <div class="button-container small-text button1">
+                    <button type="button">Continue</button>
                 </div>
             </form>
         </section>
-        <section class="container second">
+
+        <!-- SECOND CARD -->
+        <section class="container second no-display">
             <p class="title">Which topics you are interested in?</p>
             <form class="form2" action="">
                 <div class="form2-option">
                     <input
                         class="input-form2"
                         id="option1"
-                        type="radio"
+                        type="checkbox"
                         name="option"
-                        value="option1"
+                        value="Software Developer"
                     />
                     <label class="label-form2" for="option1"
                         >Software Development</label
                     >
-                    
                 </div>
 
                 <div class="form2-option">
                     <input
-                    class="input-form2"
-                    id="option2"
-                    type="radio"
-                    name="option"
-                    value="option2"
+                        class="input-form2"
+                        id="option2"
+                        type="checkbox"
+                        name="option"
+                        value="Üser Experience"
                     />
                     <label class="label-form2" for="option2"
                         >User Experience</label
@@ -76,53 +78,38 @@
 
                 <div class="form2-option">
                     <input
-                    class="input-form2"
-                    id="option3"
-                    type="radio"
-                    name="option"
-                    value="option3"
+                        class="input-form2"
+                        id="option3"
+                        type="checkbox"
+                        name="option"
+                        value="Graphic Design"
                     />
                     <label class="label-form2" for="option3"
                         >Graphic Design</label
                     >
                 </div>
 
-                <div class="button-container small-text">
-                    <button type="submit">Continue</button>
+                <div class="button-container small-text button2">
+                    <button type="button">Continue</button>
                 </div>
             </form>
         </section>
-        <section class="container first">
-            <p class="title">Register</p>
-            <form class="form1" action="">
-                <div class="form-input small-text">
-                    <label for="name">Name</label>
-                    <input
-                        class="input-form1"
-                        id="name"
-                        type="text"
-                        placeholder="enter your name"
-                        required
-                    />
-                </div>
 
-                <div class="form-input small-text">
-                    <label for="email">Email</label>
-                    <input
-                        class="input-form1"
-                        id="email"
-                        type="email"
-                        placeholder="example@gmail.com"
-                        required
-                    />
-                </div>
+        <!-- THIRD CARD -->
+        <section class="container third no-display">
+            <p class="title">Summary</p>
+            <div class="data">
+                <p>Name: <span class="name"></span></p>
+                <p>Email: <span class="email"></span></p>
+                <p>Topics: <span></span></p>
+                <ul class="topic-list"></ul>
+            </div>
 
-                <div class="button-container small-text">
-                    <button type="submit">Continue</button>
-                </div>
-            </form>
+            <div class="button-container small-text button3">
+                <button type="button">Confirm</button>
+            </div>
         </section>
-        <div class="steps-container small-text">
+        <div class="steps-container small-text pagination">
             <p>Step 1 of 3</p>
             <div class="step step-active"></div>
             <div class="step"></div>
