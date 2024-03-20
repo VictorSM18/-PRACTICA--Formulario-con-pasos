@@ -27,17 +27,19 @@ button1.addEventListener("click", () => {
 button2.addEventListener("click", () => {
     let topicResults = getCheckedArray();
 
-    for (let topic of topicResults) {
-        let itemList = document.createElement("li");
-        itemList.innerHTML = topic;
-        topicList.appendChild(itemList);
+    if (topicResults.length > 0) {
+        for (let topic of topicResults) {
+            let itemList = document.createElement("li");
+            itemList.innerHTML = topic;
+            topicList.appendChild(itemList);
+        }
+
+        step3.classList.add("step-active");
+        step2.classList.replace("step-active", "step-passed");
+
+        document.body.children[1].classList.add("no-display");
+        document.body.children[2].classList.remove("no-display");
     }
-
-    step3.classList.add("step-active");
-    step2.classList.replace("step-active", "step-passed");
-
-    document.body.children[1].classList.add("no-display");
-    document.body.children[2].classList.remove("no-display");
 });
 
 button3.addEventListener("click", () => {
