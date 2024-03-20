@@ -46,11 +46,11 @@ label {
 }
 
 .input-form1:focus {
-    border: 2px solid #e5e7eb;
+    outline: 1px solid #845EEE;
 }
 
 .input-form1:hover {
-    border: 2px solid #e5e7eb;
+    border: 2px solid #845EEE;
 }
 
 .button-container {
@@ -170,13 +170,18 @@ ul > li, span {
     box-shadow: rgba(132, 94, 238, 0.3) 0px 0px 0px 6px;
 }
 
+.step-passed {
+    background-color: #652cd1;
+}
+
 .container {
     background-color: #212936;
-    width: 35%;
+    min-width: 35%;
     height: 50%;
     border-radius: 1rem;
     border: 1px solid #4d5562;
     padding-inline: 3rem;
+    margin-inline: 2rem;
     display: grid;
 }
 

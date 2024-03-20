@@ -7,13 +7,16 @@ const setName = document.querySelector(".name");
 const setEmail = document.querySelector(".email");
 const topicList = document.querySelector(".topic-list");
 const pagination = document.querySelector(".pagination");
+const step1 = pagination.children[1];
+const step2 = pagination.children[2];
+const step3 = pagination.children[3];
 
 button1.addEventListener("click", () => {
     if (userName.value && userEmail.value) {
         setName.innerHTML = userName.value;
         setEmail.innerHTML = userEmail.value;
 
-        const step2 = pagination.children[2];
+        step1.classList.replace("step-active", "step-passed");
         step2.classList.add("step-active");
 
         document.body.children[0].classList.add("no-display");
@@ -30,8 +33,8 @@ button2.addEventListener("click", () => {
         topicList.appendChild(itemList);
     }
 
-    const step2 = pagination.children[3];
-    step2.classList.add("step-active");
+    step3.classList.add("step-active");
+    step2.classList.replace("step-active", "step-passed");
 
     document.body.children[1].classList.add("no-display");
     document.body.children[2].classList.remove("no-display");
